@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta name=generator content="Hugo 0.110.0">
+    <meta charset=utf-8>
+    <title>
+        {% block title %}
+            {{ config.title }}
+        {% endblock title %}
+    </title>
+    <meta name="theme-color" content="#062F4F"/>
+    <meta name=description content="{{ config.description }}">
+    <meta name=author content="{{ config.author }}">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    {% block css %}
+        <link href="{{ get_url(path="css/fonts.css") }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ get_url(path="css/normalize.css") }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ get_url(path="css/vncnt.css") }}" rel="stylesheet" type="text/css"/>
+    {% endblock css %}
+    <link href="{{ get_url(path="favicon.png") }}" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+    {% block content %}
+    {% endblock content %}
+</body>
+{% if config.extra.goatcounter %}
+    <script data-goatcounter="https://{{ config.extra.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{% endif %}
+</html>

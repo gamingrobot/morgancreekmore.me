@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class=error404>
+    <div class="grid-container full" role=main>
+        <div>
+            <h2><strong>404</strong></h2>
+            <h3 aria-label>
+                <hr><img src="{{ get_url(path="img/lost.gif") }}" alt="not found">
+            </h3>
+        </div>
+    </div>
+</div>
+{% endblock content %}
