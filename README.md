@@ -1,2 +1,1 @@
-# morgancreekmore.me
-Personal link page
+Zola source for https://morgancreekmore.me
