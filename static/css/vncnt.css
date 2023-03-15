@@ -26,11 +26,11 @@ html {
   --accent-color: #f9f9f9;         /* link; button-primary bg+border; textarea,select:focus border */
   --accent-color-hover: #268bd2;   /* link hover; button-primary:hover:focus bg+border */
 
-  --border-color: #062F4F;           /* button border */
-  --border-color-softer: #062F4F;    /* textarea,select,code,td,hr border   */
+  --border-color: #0d3a58;           /* button border */
+  --border-color-softer: #0d3a58;    /* textarea,select,code,td,hr border   */
 
-  --background-color: #062F4F;       /* body background; textarea,select background */
-  --background-color-softer: #062F4F;
+  --background-color: #0d3a58;       /* body background; textarea,select background */
+  --background-color-softer: #0d3a58;
   --code-background: #1e4360;         /* code background*/
 
   --button-primary-color: #f9f9f9;
