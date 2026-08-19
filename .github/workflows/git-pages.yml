@@ -9,7 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Root Deploy
-        run: curl https://morgancreekmore.me/ -X PUT --data "https://github.com/gamingrobot/morgancreekmore.me.git"
-      - name: Trigger WWW Deploy
-        run: curl https://www.morgancreekmore.me/ -X PUT --data "https://github.com/gamingrobot/morgancreekmore.me.git"
+      - name: Trigger Deploy
+        run: |
+          set -o pipefail
+          curl --fail https://morgancreekmore.me/ -X PUT --data "https://github.com/gamingrobot/morgancreekmore.me.git"
+          curl --fail https://www.morgancreekmore.me/ -X PUT --data "https://github.com/gamingrobot/morgancreekmore.me.git"
